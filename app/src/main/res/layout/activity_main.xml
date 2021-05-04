@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<FrameLayout
+    android:layout_height="200dp"
+    android:layout_width="fill_parent"
+    android:background="@android:color/black"
+    android:id="@+id/video_layout">
+
+    <com.playvideoview.PlayVideoView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/videoView"
+        app:uvv_fitXY="false"
+        app:uvv_autoRotation="true"
+        android:layout_gravity="center"/>
+
+    <com.playvideoview.PlayMediaController
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/media_controller"
+        app:pvv_scalable="true"/>
+
+</FrameLayout>
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="0dp"
+    android:layout_width="fill_parent"
+    android:id="@+id/bottom_layout"
+    android:layout_weight="1">
+
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:background="@color/black"
+        android:id="@+id/start"
+        android:text="start"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:background="@color/pvv_gray"
+        android:id="@+id/introduction"
+        android:layout_weight="1"
+        android:text="this is video introduciton ......"
+        android:gravity="center"/>
+
+</LinearLayout>
+
+</LinearLayout>

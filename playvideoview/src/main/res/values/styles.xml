@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+    <resources>
+
+    <!-- Base application theme. -->
+
+
+
+    <style parent="Theme.AppCompat.Light.DarkActionBar" name="AppTheme">
+
+    <!-- Customize your theme here. -->
+
+
+</style>
+
+
+    <style parent="@android:style/Widget.ProgressBar" name="Play.Widget.ProgressBar">
+
+    <item name="android:indeterminateDrawable">@drawable/pvv_progress_rotate</item>
+
+    <item name="android:indeterminateDuration">1000</item>
+
+</style>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rotate android:toDegrees="360"
+    android:pivotY="50%"
+    android:pivotX="50%"
+    android:fromDegrees="0"
+    android:drawable="@drawable/pvv_common_ic_loading_icon"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <resources>
+
+
+    <declare-styleable name="PlayMediaController">
+
+    <attr name="pvv_scalable" format="boolean"/>
+
+</declare-styleable>
+
+
+    <declare-styleable name="PlayVideoView">
+
+    <attr name="uvv_fitXY" format="boolean"/>
+
+    <attr name="uvv_autoRotation" format="boolean"/>
+
+</declare-styleable>
+
+</resources>

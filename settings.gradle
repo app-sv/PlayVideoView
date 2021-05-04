@@ -1,0 +1,3 @@
+include ':playvideoview'
+include ':app'
+rootProject.name = "play video view"
