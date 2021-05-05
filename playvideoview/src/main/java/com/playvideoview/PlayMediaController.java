@@ -29,10 +29,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
+import android.content.Intent;
 
 import java.util.Formatter;
 import java.util.Locale;
@@ -45,6 +47,10 @@ public class PlayMediaController extends FrameLayout {
     private Context mContext;
 
     private ProgressBar mProgress;
+    
+    private ImageView imageView;
+
+    private Intent in = new Intent();
 
     private TextView mEndTime, mCurrentTime;
 
@@ -129,6 +135,8 @@ public class PlayMediaController extends FrameLayout {
         mScaleButton = (ImageButton) v.findViewById(R.id.scale_button);
         mCenterPlayButton = v.findViewById(R.id.center_play_btn);
         mBackButton = v.findViewById(R.id.back_btn);
+        imageView = (ImageView) v.findViewById(R.id.back_btn1);
+        
 
         if (mTurnButton != null) {
             mTurnButton.requestFocus();
@@ -154,6 +162,13 @@ public class PlayMediaController extends FrameLayout {
             mBackButton.setOnClickListener(mBackListener);
         }
 
+        // boton activity
+
+        if (imageView != null) {//返回按钮仅在全屏状态下可见
+            imageView.setOnClickListener(mImageListener);
+        }
+
+        
         View bar = v.findViewById(R.id.seekbar);
         mProgress = (ProgressBar) bar;
         if (mProgress != null) {
@@ -509,6 +524,19 @@ public class PlayMediaController extends FrameLayout {
                 updateBackButton();
                 mPlayer.setFullscreen(false);
             }
+
+        }
+    };
+    
+    
+     // buton main activity para skecheware
+
+    private View.OnClickListener mImageListener = new View.OnClickListener() {
+        public void onClick(View v) {
+
+           in.setAction(Intent.ACTION_VIEW);
+             in.setClass(mContext, MainActivity.class);
+             mContext.startActivity(in);
 
         }
     };
