@@ -162,12 +162,6 @@ public class PlayMediaController extends FrameLayout {
             mBackButton.setOnClickListener(mBackListener);
         }
 
-        // boton activity
-
-        if (imageView != null) {//返回按钮仅在全屏状态下可见
-            imageView.setOnClickListener(mImageListener);
-        }
-
         
         View bar = v.findViewById(R.id.seekbar);
         mProgress = (ProgressBar) bar;
