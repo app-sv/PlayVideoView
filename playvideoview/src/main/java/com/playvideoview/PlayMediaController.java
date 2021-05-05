@@ -534,9 +534,9 @@ public class PlayMediaController extends FrameLayout {
     private View.OnClickListener mImageListener = new View.OnClickListener() {
         public void onClick(View v) {
 
-           in.setAction(Intent.ACTION_VIEW);
-             in.setClass(mContext, MainActivity.class);
-             mContext.startActivity(in);
+           //in.setAction(Intent.ACTION_VIEW);
+            // in.setClass(mContext, MainActivity.class);
+            // mContext.startActivity(in);
 
         }
     };
