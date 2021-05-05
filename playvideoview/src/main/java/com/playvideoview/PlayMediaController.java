@@ -529,17 +529,7 @@ public class PlayMediaController extends FrameLayout {
     };
     
     
-     // buton main activity para skecheware
-
-    private View.OnClickListener mImageListener = new View.OnClickListener() {
-        public void onClick(View v) {
-
-           //in.setAction(Intent.ACTION_VIEW);
-            // in.setClass(mContext, MainActivity.class);
-            // mContext.startActivity(in);
-
-        }
-    };
+     
 
     private View.OnClickListener mCenterPlayListener = new View.OnClickListener() {
         public void onClick(View v) {
